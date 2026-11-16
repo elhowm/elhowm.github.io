@@ -1,0 +1,61 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/><meta name="robots" content="noindex"/><title>Rostyslav Ross Safonov — CV</title><style>
+  @page { size: A4; margin: 14mm 16mm; }
+  * { box-sizing: border-box; }
+  html { background: #fff; color: #111; }
+  body {
+    margin: 0 auto;
+    max-width: 180mm;
+    font: 10.5pt/1.45 -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+  }
+  @media screen { body { padding: 14mm 0; } }
+  a { color: inherit; text-decoration: none; }
+  h1 { margin: 0; font-size: 22pt; line-height: 1.1; }
+  .position { margin: 2pt 0 6pt; font-size: 12.5pt; color: #444; }
+  .contacts { margin: 0; color: #444; }
+  .contacts span + span::before { content: " · "; color: #999; }
+  h2 {
+    margin: 14pt 0 6pt;
+    padding-bottom: 2pt;
+    border-bottom: 0.75pt solid #999;
+    font-size: 10.5pt;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  p { margin: 0; }
+  p + p, p + ul, ul + p { margin-top: 4pt; }
+  ul { margin: 0; padding-left: 14pt; }
+  li + li { margin-top: 2pt; }
+  .entry-head, h2 { break-after: avoid; }
+  li, .stack { break-inside: avoid; }
+  .entry + .entry { margin-top: 10pt; }
+  .entry-head { display: flex; justify-content: space-between; gap: 12pt; margin-bottom: 3pt; }
+  .entry-head strong { font-size: 11pt; }
+  .timeframe { white-space: nowrap; color: #444; }
+  .stack { margin-top: 4pt; color: #444; }
+  .stack b { color: #111; font-weight: 600; }
+</style></head><body><header><h1>Rostyslav Ross Safonov</h1><p class="position">Product developer</p><p class="contacts"><span><a href="https://elhowm.github.io/">elhowm.github.io</a></span><span><a href="mailto:elhowm@gmail.com">elhowm@gmail.com</a></span><span><a href="tel:+380934669***">+38 (093) 466 9* **</a></span><span><a href="https://github.com/elhowm">github.com/elhowm</a></span><span><a href="https://t.me/knockfog">t.me/knockfog</a></span></p></header><h2>Summary</h2><p>Focused on developing stable and easy-maintainable systems. A big fan of Pomodoro-based time management to consistently deliver results on schedule. Enjoy taking on new projects and collaborating in friendly, professional teams. Experienced in direct client communication and self-management.</p><h2>Skills</h2><p>Ruby, Ruby on Rails, Claude Code, PostgreSQL, Redis, JS, Vue.js, Docker, Digital Ocean, Sinatra, Markup, AWS, Kubernetes, Sidekiq, Grape, ElasticSearch, Kafka, Nuxt, Angular, Hotwire/Turbo, Hotwire/Stimulus, GitLab CI/CD, Datadog, Sentry, Firebase</p><h2>Experience</h2><div class="entry"><div class="entry-head"><strong>Backend developer — MauDau</strong><span class="timeframe">APR 2026 - SEP 2026</span></div><p>Ukrainian e-commerce marketplace: 3M-product catalog, 10K orders/month, multi-vendor (buyers, main seller, third-party sellers, admins).</p>
+<ul>
+<li>Designed and built a prepaid merchant wallet in the seller cabinet. I wrote the architecture blueprint and integrated LiqPay for top-ups. Commissions and marketing fees are charged from the wallet automatically, and a seller’s products are hidden until they top up if the balance runs out. Finance staff no longer have to contact sellers manually to collect payment, and the marketplace now gets paid in advance.</li>
+<li>Built a postal operator’s special tariff for small parcels in 1.5 weeks, on time against a hard deadline. It cut delivery costs for small packages by about 30%.</li>
+<li>Delivered across the buyer storefront, admin panel, seller portal and payments. I went from my first storefront tasks to owning the payments work within the first months.</li>
+<li>Never missed a sprint commitment. Burndowns were steady in every sprint, and the team’s delivery metrics became noticeably more stable after I joined.</li>
+<li>Used Claude Code for AI-assisted development, mainly to build new API endpoints quickly by following the existing patterns and modules.</li>
+</ul><p class="stack"><b>Stack:</b> Ruby on Rails, PostgreSQL, ElasticSearch, Sidekiq, Grape, Kubernetes, Datadog, Claude Code, LiqPay API, Nova post API</p></div><div class="entry"><div class="entry-head"><strong>Full stack developer — GitLab (contract via SoftServe)</strong><span class="timeframe">MAR 2022 - FEB 2026</span></div><p>Worked on GitLab, the DevSecOps platform used by software teams worldwide, across 3 product teams and with many others.</p>
+<ul>
+<li>Sole owner of the GitLab Early Access program build. I built the customer journey and the analytics for tracking user interest and engagement, so the business could decide whether to launch the program.</li>
+<li>Built customer analytics for GitLab for Education to measure how many free EDU subscriptions converted to paid plans over time, giving the business its clear view of the program’s actual profitability. I worked with the Data Analytics team to find the source data in Salesforce and Snowflake, specified the new data pipelines, and defined the reporting delivered in Tableau.</li>
+<li>GitHub → GitLab importer: led a 3-person sub-team and extended imports from code only to the project’s full history (issue/MR events, reviewers, branch protections, attachments, collaborators). I also made large imports faster and more reliable, including migrating to GitHub’s GraphQL API and rolling it out to 100% of production.</li>
+<li>Migrated an internal application from Hotwire/Turbo to Vue.js, bringing it in line with GitLab’s standard front-end stack.</li>
+<li>Contributed to the GitLab Contributors platform, the tooling behind GitLab’s open-source community contributions.</li>
+</ul><p class="stack"><b>Stack:</b> Ruby on Rails, Vue.js, Sidekiq, Hotwire/Turbo, GitLab CI/CD, GitLab API, Salesforce, Snowflake, Tableau, AWS, Claude Code</p></div><div class="entry"><div class="entry-head"><strong>Backend developer — SoftServe</strong><span class="timeframe">AUG 2021 - MAR 2022</span></div><p>IoT workplace analytics platform: office occupancy, desk usage and visitor flow, built on millions of sensor signals per second.</p>
+<ul>
+<li>Integrated a new IoT sensor provider into the data ingestion pipeline, adding more hardware the platform could support for its customers.</li>
+<li>Extended the high-throughput ETL middleware that processes millions of sensor signals per second through Kafka.</li>
+<li>Worked on a low-latency Rails API running on Kubernetes, which serves utilization data to client apps and integrations.</li>
+</ul><p class="stack"><b>Stack:</b> Ruby on Rails, Docker, Kubernetes, Minikube, Datadog, Kafka</p></div><div class="entry"><div class="entry-head"><strong>Freelance full-stack developer</strong><span class="timeframe">APR 2020 - JUN 2021</span></div><p>Medical services marketplace where patients book and buy clinic services online.</p>
+<ul>
+<li>Sole developer: designed and built the entire platform from scratch. That meant the Rails API backend plus 3 Nuxt front-end apps for platform admins, clinic admins and patients.</li>
+<li>Built the full patient flow from booking to purchase, with real-time appointment scheduling from available time slots fetched from clinics’ medical information systems (MIS).</li>
+<li>Greatly improved the performance of the MIS integration endpoint, making live slot availability fast enough for patient-facing booking (from 1.2s to something about 200-300ms).</li>
+<li>Designed and built the API for a companion patient mobile app.</li>
+</ul><p class="stack"><b>Stack:</b> Ruby on Rails, PostgreSQL, Sidekiq, Vue.js, Nuxt, Docker, Docker compose, Digital Ocean, Sentry</p></div><div class="entry"><div class="entry-head"><strong>Backend developer (part-time) — SOA Labs</strong><span class="timeframe">NOV 2020 - MAY 2021</span></div><p>Real estate platform for generating online leads and managing your existing database with an intelligent home wealth advisor. Worked on extending Rails API.</p><p class="stack"><b>Stack:</b> Ruby on Rails, PostgreSQL, Sidekiq, Redis, Firebase</p></div><div class="entry"><div class="entry-head"><strong>Rails API &amp; Vue.js developer (full-stack) — &lt;NDA&gt;</strong><span class="timeframe">NOV 2019 - APR 2020</span></div><p>Worked on building cryptocurrency exchange. Rails backend &amp; Vue.js (nuxt) frontend. Encrypted data connection between different project apps. Background jobs for fetching fresh prices. Node.js wallets RPI.</p><p class="stack"><b>Stack:</b> Ruby on Rails, PostgreSQL, Vue.js, Nuxt, Docker, Kubernetes, Minikube, Digital Ocean</p></div><div class="entry"><div class="entry-head"><strong>Ruby on Rails full stack developer — KodoLabs</strong><span class="timeframe">MAY 2018 - NOV 2019</span></div><p>Worked on a different projects with different teams (building from &quot;zero&quot; and helping with existed apps). First Vue.js experience. Converted Rails native app into Rails API only &amp; Vue.js frontend. API for mobile devices presented. DB views for statistic included. Docker deployment.</p><p class="stack"><b>Stack:</b> Ruby on Rails, PostgreSQL, Sidekiq, Hotwire/Stimulus, Vue.js, Docker, Docker compose, Digital Ocean</p></div><div class="entry"><div class="entry-head"><strong>Ruby on Rails backend developer — Loomlogic</strong><span class="timeframe">FEB 2017 - APR 2018</span></div><p>Almost all time worked on restful API for Angular 1.6 app. Also had a deal with Sidekiq background jobs, Redis, Amazon SES and S3, connecting to third party services. Did all tasks by using TDD and continuous integration. Created clear, understandable, SOLID code with rubocop verifying + avoiding callbacks and metaprogramming usage. Refactored a lot of bad legacy code.</p><p class="stack"><b>Stack:</b> Ruby on Rails, PostgreSQL, Sidekiq, Stripe API</p></div><div class="entry"><div class="entry-head"><strong>Ruby on Rails full stack developer — Gera-IT</strong><span class="timeframe">NOV 2016 - FEB 2017</span></div><p>Full stack tasks with RoR and Angular 1.6. Supported existing and developed new features like integrations with third party services(Pivotal, Jira, YouTrack and so on), refactoring and optimizing ruby code + DB queries for better performance. First continuous integration experience :)</p><p class="stack"><b>Stack:</b> Ruby on Rails, PostgreSQL, Sidekiq, Angular, Pivotal API, Jira API, YouTrack API</p></div><div class="entry"><div class="entry-head"><strong>Ruby on Rails full stack developer — Rexsoft</strong><span class="timeframe">APR 2016 - SEP 2016</span></div><p>Developed e-commerce apps with microservices architecture(with Rails native frontend).</p><p class="stack"><b>Stack:</b> Ruby on Rails, PostgreSQL, Sidekiq</p></div><div class="entry"><div class="entry-head"><strong>Ruby on Rails full stack developer — Softbistro</strong><span class="timeframe">NOV 2014 - APR 2016</span></div><p>Developed CRM with Rails(Sidekiq, Redis, Amazon SES, Amazon S3) and native frontend.</p><p class="stack"><b>Stack:</b> Ruby on Rails, PostgreSQL, Sidekiq</p></div><div class="entry"><div class="entry-head"><strong>Ruby on Rails full stack developer — Tehnoprostir</strong><span class="timeframe">SEP 2014 - NOV 2014</span></div><p>Developed and supported e-commerce shop(with Rails native frontend).</p><p class="stack"><b>Stack:</b> Ruby on Rails, PostgreSQL, Sidekiq</p></div><h2>Education</h2><div class="entry"><div class="entry-head"><strong>Khmelnitsky Polytechnical College</strong><span class="timeframe">SEP 2012 - JUN 2016</span></div><p>Software engineering specialist diploma</p></div></body></html>
